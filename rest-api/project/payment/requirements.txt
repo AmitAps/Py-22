@@ -1,0 +1,8 @@
+curl -X POST \
+http://127.0.0.1:8002/orders \
+-H 'Accept: application/json' \
+-H 'Content-Type: application/json' \
+-d '{
+"id": "01G1ARAHCTSGT47NY5YC896YF3",
+"quantity": 2
+}'

@@ -50,4 +50,10 @@ def create(product: Product):
     return product.save()
 
 
-#19:20
+@app.get('/products/{pk}')
+def get(pk: str):
+    return Product.get(pk)
+
+@app.delete('/products/{pk}')
+def delete(pk:str):
+    return Product.delete(pk)
